@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="ArQetv" name="Zen Delay Plugin" projectType="audioplug" version="0.0.1"
+              bundleIdentifier="com.peersky.ZEN" includeBinaryInAppConfig="1"
+              buildVST="0" buildVST3="1" buildAU="1" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="ZENDELAY" pluginDesc="BuddhaPlayingDub"
+              pluginManufacturer="peersky" pluginManufacturerCode="Peer" pluginCode="ZenD"
+              pluginChannelConfigs="{2,2}" pluginIsSynth="0" pluginWantsMidiIn="1"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="1" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="ZENAU" pluginRTASCategory="" aaxIdentifier="com.peersky.zen"
+              pluginAAXCategory="2" companyName="Tim Pechersky aka peersky"
+              companyEmail="tim@teknologic.lv" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" buildStandalone="1" enableIAA="0" cppLanguageStandard="17"
+              companyCopyright="Tim Pechersky aka peersky" pluginFormats="buildAU,buildStandalone,buildVST3"
+              pluginCharacteristicsValue="pluginWantsMidiIn,pluginIsMidiEffectPlugin"
+              jucerFormatVersion="1" pluginAUMainType="'aufx'" pluginRTASDisableBypass="0"
+              pluginRTASDisableMultiMono="0" pluginAAXDisableBypass="0" pluginAAXDisableMultiMono="0"
+              projectLineFeed="&#13;&#10;">
+  <MAINGROUP id="F7Bywq" name="Zen Delay Plugin">
+    <GROUP id="{14C5E2CD-5D51-3FD3-5677-28BECA29E95E}" name="Source">
+      <GROUP id="{A89F40A7-55BD-BADE-F6FC-0813ECB90B8B}" name="Wrapper">
+        <FILE id="VRXe8O" name="SpectrumAnalyzer.h" compile="0" resource="0"
+              file="Source/SpectrumAnalyzer.h"/>
+        <FILE id="R9R9N2" name="Globals.h" compile="0" resource="0" file="Source/Globals.h"/>
+        <FILE id="oQ7Hdj" name="UIComponent.h" compile="0" resource="0" file="Source/UIComponent.h"/>
+        <FILE id="ONd1SP" name="UIComponent.cpp" compile="1" resource="0" file="Source/UIComponent.cpp"/>
+        <FILE id="EnmsIi" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/PluginProcessor.h"/>
+        <FILE id="xwxe1U" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/PluginProcessor.cpp"/>
+        <FILE id="L2MQTe" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <FILE id="CPrrCq" name="App.cpp" compile="1" resource="0" file="../../App.cpp"/>
+      <FILE id="QHRLoO" name="App.h" compile="0" resource="0" file="../../App.h"/>
+      <FILE id="ibMFux" name="AppWrapper.cpp" compile="1" resource="0" file="../../AppWrapper.cpp"/>
+      <FILE id="KEELOB" name="AppWrapper.h" compile="0" resource="0" file="../../AppWrapper.h"/>
+      <FILE id="HWbJh7" name="README.md" compile="0" resource="1" file="../../README.md"/>
+    </GROUP>
+    <GROUP id="{B367095B-6BEB-6CB4-A30F-E47B224B443D}" name="zenlib">
+      <GROUP id="{29C7D0BB-4714-9909-3FD4-9C11CF81937D}" name="blocks">
+        <FILE id="nMP3SF" name="compressor.h" compile="0" resource="0" file="../../../zenlib/blocks/compressor.h"/>
+        <FILE id="wNRIJA" name="delay.h" compile="0" resource="0" file="../../../zenlib/blocks/delay.h"/>
+        <FILE id="CCj6aJ" name="delay_line.h" compile="0" resource="0" file="../../../zenlib/blocks/delay_line.h"/>
+        <FILE id="OycTRL" name="feedback.h" compile="0" resource="0" file="../../../zenlib/blocks/feedback.h"/>
+        <FILE id="Hwnwt4" name="index.h" compile="0" resource="0" file="../../../zenlib/blocks/index.h"/>
+        <FILE id="OYaaEl" name="reverb.h" compile="0" resource="0" file="../../../zenlib/blocks/reverb.h"/>
+        <FILE id="ELeefy" name="svf.h" compile="0" resource="0" file="../../../zenlib/blocks/svf.h"/>
+        <FILE id="HIZPc3" name="wave.h" compile="0" resource="0" file="../../../zenlib/blocks/wave.h"/>
+        <FILE id="xN8rJL" name="zen_bitcrush.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_bitcrush.c"/>
+        <FILE id="pjCLi3" name="zen_bitcrush.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_bitcrush.h"/>
+        <FILE id="zMvQmk" name="zen_envelope.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_envelope.c"/>
+        <FILE id="x956Ng" name="zen_envelope.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_envelope.h"/>
+        <FILE id="NqdITG" name="zen_fader.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_fader.c"/>
+        <FILE id="wesY83" name="zen_fader.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_fader.h"/>
+        <FILE id="fIhTF3" name="zen_filters.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_filters.c"/>
+        <FILE id="BmhMQG" name="zen_filters.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_filters.h"/>
+        <FILE id="PNgmcX" name="zen_mixer.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_mixer.c"/>
+        <FILE id="TYAnt1" name="zen_mixer.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_mixer.h"/>
+        <FILE id="BifJ80" name="zen_modulation.c" compile="0" resource="0"
+              file="../../../zenlib/blocks/zen_modulation.c"/>
+        <FILE id="PVSAHE" name="zen_modulation.h" compile="0" resource="0"
+              file="../../../zenlib/blocks/zen_modulation.h"/>
+        <FILE id="tHx5NO" name="zen_multiwave.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_multiwave.c"/>
+        <FILE id="hnh0ST" name="zen_sampler.c" compile="0" resource="0" file="../../../zenlib/blocks/zen_sampler.c"/>
+        <FILE id="xbLLAr" name="zen_sampler.h" compile="0" resource="0" file="../../../zenlib/blocks/zen_sampler.h"/>
+        <FILE id="LUYFgR" name="zen_zero_crossing.c" compile="0" resource="0"
+              file="../../../zenlib/blocks/zen_zero_crossing.c"/>
+        <FILE id="W0o3U6" name="zen_zero_crossing.h" compile="0" resource="0"
+              file="../../../zenlib/blocks/zen_zero_crossing.h"/>
+      </GROUP>
+      <GROUP id="{0C65DF85-1D8C-8C07-E5C6-1F553272FAEB}" name="dsp">
+        <FILE id="aCf5cf" name="DelayInterpolator.h" compile="0" resource="0"
+              file="../../../zenlib/dsp/DelayInterpolator.h"/>
+        <FILE id="oFFI7c" name="Interpolator.h" compile="0" resource="0" file="../../../zenlib/dsp/Interpolator.h"/>
+        <FILE id="fe08l5" name="math.h" compile="0" resource="0" file="../../../zenlib/dsp/math.h"/>
+      </GROUP>
+      <GROUP id="{4ADF8368-73A5-95C5-3AAB-69DAD0AD6B14}" name="utils">
+        <FILE id="MnIUoh" name="debug.h" compile="0" resource="0" file="../../../zenlib/utils/debug.h"/>
+        <FILE id="pDMp1F" name="RingBuffer.h" compile="0" resource="0" file="../../../zenlib/utils/RingBuffer.h"/>
+        <FILE id="R8joBA" name="tables.h" compile="0" resource="0" file="../../../zenlib/utils/tables.h"/>
+        <FILE id="No6T2B" name="zen_memory.cpp" compile="1" resource="0" file="../../../zenlib/utils/zen_memory.cpp"/>
+        <FILE id="Q8lL1D" name="zen_memory.h" compile="0" resource="0" file="../../../zenlib/utils/zen_memory.h"/>
+      </GROUP>
+      <FILE id="gCGNRe" name="AudioInstance.h" compile="0" resource="0" file="../../../zenlib/AudioInstance.h"/>
+      <FILE id="QxoKMJ" name="LICENSE" compile="0" resource="1" file="../../../zenlib/LICENSE"/>
+      <FILE id="trNeIM" name="README.md" compile="0" resource="1" file="../../../zenlib/README.md"/>
+      <FILE id="ND5jVw" name="zen.h" compile="0" resource="0" file="../../../zenlib/zen.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" microphonePermissionNeeded="1" iosBluetoothPermissionNeeded="1"
+               sendAppleEventsPermissionNeeded="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ZEN" enablePluginBinaryCopyStep="1"
+                       fastMath="1"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ZEN"
+                       enablePluginBinaryCopyStep="1" fastMath="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" iosScreenOrientation="UIInterfaceOrientationPortrait,UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iosDevelopmentTeamID="QY96HSP2FJ" microphonePermissionNeeded="1"
+                  iosBackgroundAudio="1" iPadScreenOrientation="UIInterfaceOrientationPortrait,UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iosDeviceFamily="1,2">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="LEAF" enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="LEAF"
+                       enablePluginBinaryCopyStep="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="LEAF" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="LEAF" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0" linkTimeOptimisation="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
